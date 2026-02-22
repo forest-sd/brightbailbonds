@@ -1,0 +1,107 @@
+/* Bright Bail Bonds - Professional Trust Theme */
+:root {
+  --primary: #045cb4;
+  --primary-dark: #034a91;
+  --accent: #0a1628;
+  --gold: #d4a843;
+  --dark: #1e293b;
+  --text: #334155;
+  --text-light: #64748b;
+  --bg: #ffffff;
+  --bg-alt: #f8fafc;
+  --border: #e2e8f0;
+  --success: #16a34a;
+  --urgent: #dc2626;
+  --radius: 8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+a{color:var(--primary);text-decoration:none;transition:color 0.2s}
+a:hover{color:var(--primary-dark)}
+img{max-width:100%;height:auto}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+header{background:var(--accent);color:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+header .container{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-size:1.4rem;font-weight:700;color:#fff;letter-spacing:-0.5px}
+.logo span{color:var(--gold);margin-left:6px}
+nav{display:flex;gap:20px;align-items:center}
+nav a{color:#cbd5e1;font-size:0.9rem;font-weight:500}
+nav a:hover{color:#fff}
+.hamburger{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}
+
+.hero{background:linear-gradient(135deg,var(--accent) 0%,#0f2847 60%,var(--primary) 100%);color:#fff;padding:80px 20px;text-align:center}
+.hero h1{font-size:2.8rem;font-weight:800;margin-bottom:16px;letter-spacing:-1px}
+.hero p{font-size:1.15rem;opacity:0.92;max-width:700px;margin:0 auto 30px;line-height:1.6}
+.hero .btn{display:inline-block;background:var(--gold);color:var(--accent);padding:14px 32px;border-radius:var(--radius);font-weight:700;font-size:1rem;transition:all 0.2s;margin:0 8px}
+.hero .btn:hover{background:#c49a38;transform:translateY(-2px)}
+.hero .btn-outline{background:transparent;border:2px solid #fff;color:#fff}
+.hero .btn-outline:hover{background:rgba(255,255,255,0.1)}
+.hero .phone{font-size:1.8rem;font-weight:800;color:var(--gold);display:block;margin-top:20px;letter-spacing:1px}
+
+section{padding:60px 20px}
+section:nth-child(even){background:var(--bg-alt)}
+section h2{font-size:2rem;color:var(--dark);margin-bottom:12px;font-weight:700}
+section .subtitle{color:var(--text-light);font-size:1.05rem;margin-bottom:40px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:box-shadow 0.2s,transform 0.2s}
+.card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-2px)}
+.card h3{font-size:1.1rem;margin-bottom:8px;color:var(--dark)}
+.card h3 a{color:var(--primary)}
+.card p{font-size:0.92rem;color:var(--text-light);line-height:1.5;margin-bottom:10px}
+.card .icon{font-size:2rem;margin-bottom:12px}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.feature{text-align:center;padding:30px 20px}
+.feature .icon{font-size:2.5rem;margin-bottom:16px}
+.feature h3{font-size:1.15rem;color:var(--dark);margin-bottom:10px}
+.feature p{color:var(--text-light);font-size:0.95rem}
+
+.cta-bar{background:var(--primary);color:#fff;padding:40px 20px;text-align:center}
+.cta-bar h2{color:#fff;margin-bottom:10px}
+.cta-bar p{color:rgba(255,255,255,0.9);margin-bottom:20px}
+.cta-bar .btn{display:inline-block;background:var(--gold);color:var(--accent);padding:14px 32px;border-radius:var(--radius);font-weight:700}
+
+.link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.link-card{display:block;background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;transition:all 0.2s;text-decoration:none}
+.link-card:hover{border-color:var(--primary);box-shadow:0 4px 12px rgba(4,92,180,0.12);transform:translateY(-1px)}
+.link-card .platform{font-weight:700;color:var(--dark);font-size:1rem;margin-bottom:4px}
+.link-card .desc{color:var(--text-light);font-size:0.88rem;line-height:1.4}
+.link-card .url{color:var(--primary);font-size:0.78rem;margin-top:6px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.section-divider{text-align:center;margin:50px 0 30px;position:relative}
+.section-divider h2{display:inline-block;background:var(--bg);padding:0 20px;position:relative;z-index:1}
+.section-divider::before{content:'';position:absolute;top:50%;left:0;right:0;height:2px;background:var(--border)}
+
+article{max-width:800px;margin:0 auto}
+article h2{font-size:2rem;margin-bottom:20px}
+article h3{font-size:1.4rem;margin:30px 0 12px;color:var(--dark)}
+article p{margin-bottom:16px}
+article ul,article ol{margin:16px 0 16px 24px}
+article li{margin-bottom:8px}
+
+.faq-item{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:16px}
+.faq-item h3{font-size:1.1rem;color:var(--primary);margin-bottom:10px}
+.faq-item p{color:var(--text);margin-bottom:0}
+
+footer{background:var(--accent);color:#94a3b8;padding:40px 20px;text-align:center;font-size:0.9rem}
+footer a{color:var(--gold)}
+footer .footer-links{margin-bottom:16px}
+footer .footer-links a{margin:0 10px;color:#cbd5e1}
+footer .footer-links a:hover{color:#fff}
+
+@media(max-width:768px){
+  .hero h1{font-size:2rem}
+  .hero p{font-size:1rem}
+  .hero{padding:50px 20px}
+  .hero .phone{font-size:1.4rem}
+  section{padding:40px 16px}
+  nav{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--accent);padding:20px;gap:16px}
+  nav.active{display:flex}
+  .hamburger{display:block}
+  .grid{grid-template-columns:1fr}
+  .link-grid{grid-template-columns:1fr}
+  .features{grid-template-columns:1fr}
+}
