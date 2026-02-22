@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://brightbailbonds.com/sitemap.xml
+Sitemap: https://bailbondloans.us.com/sitemap.xml
